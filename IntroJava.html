@@ -1,22 +1,31 @@
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-         box-sizing: border-box;
-        }
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function clicked() {
+                
+                alert('Thisisafunctioncall');
+                }
+        </script>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
 
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <h1> Java Script Intro</h1>
+    <body>
+        <h1> Java Script Intro</h1>
 
-    <p id="intro">HTML content can be changed with java script.</p>
+        <p id="intro">HTML content can be changed with java script.</p>
 
-    <button type="button" onclick='document.getElementById("intro").innerHTML = "Hello Person"'>Click Me!</button>
+        <button type="button" onclick='document.getElementById("intro").innerHTML = "Hello Person"'>Click Me!</button>
 
-</body>
+
+        <button onclick='window.alert("ButtonClick");'>HELLO!</button>
+        <button onclick='clicked();'>HELLO!</button>
+    </body>
 
 </html>
