@@ -8,10 +8,13 @@
             alert('Thisisafunctioncall');
         }
     </script>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <style type="text/css">
+        body
+      {
+      background-color:skyblue;
+      text-align:center;
+      }
+        
     </style>
 </head>
 
@@ -33,7 +36,13 @@
     <img id="myImage" src="CWAlogo2.png">
 
     <button onclick="document.getElementById('myImage').src='CWAlogo2.png'">Change image</button>
-
+    <form action="splitter">
+        Input your bill: <input type="text" name="bill">
+        <br>
+        Enter no. of people: <input type="text" name="people">
+        <br>
+        <input type="submit">
+    </form>
 </body>
 
 </html>
