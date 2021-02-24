@@ -151,10 +151,17 @@
 
     };
 
-
+    var Games, text,flen; i;
     var Games = ["Siege", "Valheim", "Minecraft"];
-    var last = Games[Games.length - 1];
-    document.getElementById("demo").innerHTML = last;
+    flen = Games.length;
+    
+    text ="<ul>";
+    for(i= 0; i < flen; i++) {
+      text += "<li>" + Games[i] + "</li>"
+    }
+    text += "<ul>";
+
+    document.getElementById("demo").innerHTML = text;
 
   </script>
 
