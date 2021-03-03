@@ -20,6 +20,36 @@
         
             document.getElementById("demo").innerHTML = text;
         </script>
+
+        <script>
+           pattern = p;
+           Matcher = m;
+           String = s;
+
+     
+             
+            // with regular expression we can validate a mobile
+            // number. 
+            // 1) Begins with 44
+            // 2) Then contains 5-11 digits.
+            // 3) Then contains 6 digits
+            Pattern.compile("(44)?[5-11][0-6]{6}");
+        
+          
+            m = p.matcher(s);
+            return (m.find() && m.group().equals(s));
+
+        
+
+            s = "347873923408";
+            
+            if (isValid(s)) 
+                System.out.println("Valid Number");     
+            else
+                System.out.println("Invalid Number");     
+
+
+        </script>
         
     </body>
 
