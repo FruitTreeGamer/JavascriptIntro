@@ -58,6 +58,7 @@
     <p id="demo2"></p>
 
     <script>
+      try {
         var car = {carMake = "Ford",carModel = "Fiesta", carYear = 2011, carColour = "blue"}
 
         var x = car;
@@ -65,6 +66,10 @@
 
         document.getElementById("demo2").innerHTML =
         car.carMake + car.carModel + " is made in " + car.carYear + " and the colour is" + car.carColour;
+      }
+      catch(err){
+        document.getElementById("demo2").innerHTML = err.message;
+      }
     </script>
 </body>
 
