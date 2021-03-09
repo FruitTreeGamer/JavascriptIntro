@@ -58,14 +58,13 @@
     <p id="demo2"></p>
 
     <script>
-        var person = new Object();
-        person.carMake = "Ford";
-        person.carModel = "Fiesta";
-        person.carYear = 2011;
-        person.carColour = "blue";
+        var car = {carMake = "Ford",carModel = "Fiesta", carYear = 2011, carColour = "blue"}
+
+        var x = car;
+        x.carYear = 2000;
 
         document.getElementById("demo2").innerHTML =
-         person.carMake + carModel + " is made in " + person.carYear + " and the colour is" + carColour;
+        car.carMake + car.carModel + " is made in " + car.carYear + " and the colour is" + car.carColour;
     </script>
 </body>
 
