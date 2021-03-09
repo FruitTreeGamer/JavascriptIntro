@@ -1,60 +1,73 @@
 <html>
-    <head>
-     
-       
-    </head>
 
-    <body>
-        <h1>Welcome to my page</h1>
-        <p id="demo"></p>
-        <script>
-            var Games, text, flen; i;
-            var Games = ["Siege", "Valheim", "Minecraft"];
-            flen = Games.length;
-        
-            text = "<ul>";
-            for (i = 0; i < flen; i++) {
-              text += "<li>" + Games[i] + "</li>"
-            }
-            text += "<ul>";
-        
-            document.getElementById("demo").innerHTML = text;
-        </script>
-
-        <p id="demo1"></p>
-        <script>
-           pattern = p;
-           Matcher = m;
-           String = s;
-
-     
-             
-            // with regular expression we can validate a mobile
-            // number. 
-            // 1) Begins with 44
-            // 2) Then contains 5-11 digits.
-            // 3) Then contains 6 digits
-            Pattern.compile("(44)?[5-11][0-6]{6}");
-        
-          
-            m = p.matcher(s);
-            return (m.find() && m.group().equals(s));
-
-        
-
-            s = "347873923408";
-            
-            if (isValid(s)) 
-                System.out.println("Valid Number");     
-            else
-                System.out.println("Invalid Number");    
-                
-            document.getElementById("demo1").innerHTML = text;
+<head>
 
 
-        </script>
-        
-    </body>
+</head>
+
+<body>
+    <h1>Welcome to my page</h1>
+    <p id="demo"></p>
+    <script>
+        var Games, text, flen; i;
+        var Games = ["Siege", "Valheim", "Minecraft"];
+        flen = Games.length;
+
+        text = "<ul>";
+        for (i = 0; i < flen; i++) {
+            text += "<li>" + Games[i] + "</li>"
+        }
+        text += "<ul>";
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <p id="demo1"></p>
+    <script>
+        pattern = p;
+        Matcher = m;
+        String = s;
+
+
+
+        // with regular expression we can validate a mobile
+        // number. 
+        // 1) Begins with 44
+        // 2) Then contains 5-11 digits.
+        // 3) Then contains 6 digits
+        Pattern.compile("(44)?[5-11][0-6]{6}");
+
+
+        m = p.matcher(s);
+        return (m.find() && m.group().equals(s));
+
+
+
+        s = "347873923408";
+
+        if (isValid(s))
+            System.out.println("Valid Number");
+        else
+            System.out.println("Invalid Number");
+
+        document.getElementById("demo1").innerHTML = text;
+
+
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+        var person = new Object();
+        person.carMake = "Ford";
+        person.carModel = "Fiesta";
+        person.carYear = 2011;
+        person.carColour = "blue";
+
+        document.getElementById("demo2").innerHTML =
+         person.carMake + carModel + " is made in " + person.carYear + " and the colour is" + carColour;
+    </script>
+</body>
 
 
 
