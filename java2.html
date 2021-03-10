@@ -6,71 +6,79 @@
 </head>
 
 <body>
-    <h1>Welcome to my page</h1>
-    <p id="demo"></p>
-    <script>
-        var Games, text, flen; i;
-        var Games = ["Siege", "Valheim", "Minecraft"];
-        flen = Games.length;
+  <h1>Welcome to my page</h1>
+  <p id="demo"></p>
+  <script>
+    var Games, text, flen; i;
+    var Games = ["Siege", "Valheim", "Minecraft"];
+    flen = Games.length;
 
-        text = "<ul>";
-        for (i = 0; i < flen; i++) {
-            text += "<li>" + Games[i] + "</li>"
-        }
-        text += "<ul>";
+    text = "<ul>";
+    for (i = 0; i < flen; i++) {
+      text += "<li>" + Games[i] + "</li>"
+    }
+    text += "<ul>";
 
-        document.getElementById("demo").innerHTML = text;
-    </script>
+    document.getElementById("demo").innerHTML = text;
+  </script>
 
-    <p id="demo1"></p>
-    <script>
-        pattern = p;
-        Matcher = m;
-        String = s;
-
-
-
-        // with regular expression we can validate a mobile
-        // number. 
-        // 1) Begins with 44
-        // 2) Then contains 5-11 digits.
-        // 3) Then contains 6 digits
-        Pattern.compile("(44)?[5-11][0-6]{6}");
-
-
-        m = p.matcher(s);
-        return (m.find() && m.group().equals(s));
+  <p id="demo1"></p>
+  <script>
+    pattern = p;
+    Matcher = m;
+    String = s;
 
 
 
-        s = "347873923408";
-
-        if (isValid(s))
-            System.out.println("Valid Number");
-        else
-            System.out.println("Invalid Number");
-
-        document.getElementById("demo1").innerHTML = text;
+    // with regular expression we can validate a mobile
+    // number. 
+    // 1) Begins with 44
+    // 2) Then contains 5-11 digits.
+    // 3) Then contains 6 digits
+    Pattern.compile("(44)?[5-11][0-6]{6}");
 
 
-    </script>
+    m = p.matcher(s);
+    return (m.find() && m.group().equals(s));
 
-    <p id="demo2"></p>
 
-    <script>
-      try {
-        var car = {carMake = "Ford",carModel = "Fiesta", carYear = 2011, carColour = "blue"}
 
-        var x = car;
-        x.carYear = 2000;
+    s = "347873923408";
 
-        document.getElementById("demo2").innerHTML =
+    if (isValid(s))
+      System.out.println("Valid Number");
+    else
+      System.out.println("Invalid Number");
+
+    document.getElementById("demo1").innerHTML = text;
+
+
+  </script>
+
+  <p id="demo2"></p>
+
+  <script>
+    try {
+      var car = { carMake = "Ford", carModel = "Fiesta", carYear = 2011, carColour = "blue" }
+
+      var x = car;
+      x.carYear = 2000;
+
+      document.getElementById("demo2").innerHTML =
         car.carMake + car.carModel + " is made in " + car.carYear + " and the colour is" + car.carColour;
-      }
-      catch(err){
-        document.getElementById("demo2").innerHTML = err.message;
-      }
-    </script>
+    }
+    catch (err) {
+      document.getElementById("demo2").innerHTML = err.message;
+    }
+  </script>
+
+  <button onclick="myFunction()">Replace document</button>
+
+  <script>
+    function myFunction() {
+      location.replace("https://fruittreegamer.github.io/JavascriptIntro/")
+    }
+  </script>
 </body>
 
 
