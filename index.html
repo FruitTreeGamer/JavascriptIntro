@@ -4,14 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     nav {
-           padding: 12px 16px;
-           background-color: lightblue;
-           position: relative;
-           animation-name: example;
-           animation-duration: 10s;
-           overflow: hidden;
-     }
- </style>
+      padding: 12px 16px;
+      background-color: lightblue;
+      position: relative;
+      animation-name: example;
+      animation-duration: 10s;
+      overflow: hidden;
+    }
+  </style>
   <script>
     document.cookie = "username=Cameron Taylor";
     function setCookie(cname, cvalue, exdays) {
@@ -71,16 +71,16 @@
 
   <div class="topnav">
     <nav></nav>
-    <a  class="active" href="#home">Home</a>
+    <a class="active" href="#home">Home</a>
     <a href="#Code">Code</a>
-    <a  href="java2.html" style="float:right">Lets go to page 2</a>
+    <a href="java2.html" style="float:right">Lets go to page 2</a>
     <div class="dropdown">
-        <button class="dropbtn">More
-            <i class="fa fa-caret-down"></i>
-        </button>
-      </div>
+      <button class="dropbtn">More
+        <i class="fa fa-caret-down"></i>
+      </button>
     </div>
-</div>
+  </div>
+  </div>
 
   <p id="intro">HTML content can be changed with java script.</p>
 
@@ -102,19 +102,19 @@
     <div id="calculator">
       <form>
         <p>How much was your bill?
-        <p>
-          $ <input id="billamt" type="text" placeholder="Bill Amount">
+          <p>
+            $ <input id="billamt" type="text" placeholder="Bill Amount">
 
-        <p>How was your service?
-        <p>
-          <select id="serviceQual">
-            <option disabled selected value="0">-- Choose an Option --</option>
-            <option value="0.3">30&#37; &#45; Outstanding</option>
-            <option value="0.2">20&#37; &#45; Good</option>
-            <option value="0.15">15&#37; &#45; It was OK</option>
-            <option value="0.1">10&#37; &#45; Bad</option>
-            <option value="0.05">5&#37; &#45; Terrible</option>
-          </select>
+            <p>How was your service?
+              <p>
+                <select id="serviceQual">
+                  <option disabled selected value="0">-- Choose an Option --</option>
+                  <option value="0.3">30&#37; &#45; Outstanding</option>
+                  <option value="0.2">20&#37; &#45; Good</option>
+                  <option value="0.15">15&#37; &#45; It was OK</option>
+                  <option value="0.1">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
 
       </form>
       <p>How many people are sharing the bill?</p>
@@ -178,6 +178,7 @@
   </script>
 
 </body>
+
 <body>
   <script>
     var Games, text, flen; i;
@@ -191,6 +192,12 @@
     text += "<ul>";
 
     document.getElementById("demo").innerHTML = text;
+  </script>
+
+  <p id="ident"></p>
+
+  <script>
+    document.getElementById("ident").innerHTML = navigator.appVersion;
   </script>
 
 </body>
